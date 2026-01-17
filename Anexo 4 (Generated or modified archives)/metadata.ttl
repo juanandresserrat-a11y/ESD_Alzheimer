@@ -12,53 +12,55 @@
     dct:title "Grafo de Conocimiento: Enfermedad de Alzheimer"@es ;
     dct:title "Knowledge Graph: Alzheimer Disease"@en ;
     dct:description """Grafo RDF que integra información genética, molecular y clínica sobre la Enfermedad de Alzheimer.
-    Incluye variantes genéticas en genes clave (APP, PSEN1, PSEN2, APOE, MAPT), proteínas asociadas,
-    fenotipos clínicos (cognitivos, conductuales, neurológicos) y tratamientos farmacológicos aprobados.
-    El dataset utiliza ontologías estándar como Sequence Ontology, Human Phenotype Ontology, Gene Ontology 
-    y el modelo BioLink, y se enlaza con recursos externos como UniProt, ClinVar y DrugBank."""@es ;
-    
-    dct:creator <https://orcid.org/0000-0000-0000-0000> ;
+Incluye variantes genéticas en genes clave (APP, PSEN1, PSEN2, APOE, MAPT), proteínas asociadas,
+fenotipos clínicos (cognitivos, conductuales, neurológicos) y tratamientos farmacológicos aprobados.
+El dataset utiliza ontologías estándar como Sequence Ontology, Human Phenotype Ontology, Gene Ontology
+y el modelo BioLink, y se enlaza con recursos externos como UniProt, ClinVar y DrugBank."""@es ;
+
+    dct:creator <https://um.es/person/JuanAndresSerratHurtado> ;
     dct:created "2025-01-10"^^xsd:date ;
     dct:modified "2025-01-10"^^xsd:date ;
     dct:issued "2025-01-10"^^xsd:date ;
-    
+
     dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
     dct:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
-    
+
     dct:subject "Alzheimer Disease"@en ;
     dct:subject "Genetic Variants"@en ;
     dct:subject "Neurodegeneration"@en ;
     dct:subject "Beta-Amyloid"@en ;
     dct:subject "APOE"@en ;
-    
+
     dcat:keyword "alzheimer"@es, "neurodegeneracion"@es, "APP"@es, "PSEN1"@es, "APOE"@es, "demencia"@es ;
     dcat:keyword "alzheimer"@en, "neurodegeneration"@en, "amyloid"@en, "tau"@en, "dementia"@en ;
-    
+
     dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
-    
+
     cc:license <https://opensource.org/licenses/MIT> ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
-    
+
     dct:conformsTo <https://www.w3.org/TR/rdf11-concepts/> ;
     dct:conformsTo <https://www.w3.org/TR/sparql11-query/> ;
-    
+
     dcat:landingPage <https://github.com/alumno25/Practica_alzheimer> ;
-    
-    void:triples "520"^^xsd:integer ;
+
+    void:triples "488"^^xsd:integer ;
     void:entities "140"^^xsd:integer ;
     void:properties "40"^^xsd:integer ;
-    
+
+    dct:source <http://dayhoff.inf.um.es:3050/data/> ;
+
     prov:wasGeneratedBy <https://um.es/activity/alzheimer_dataset_creation> ;
-    
+
     dcat:distribution <https://um.es/data/AlzheimerDataset/rdf> ;
     dcat:distribution <https://um.es/data/AlzheimerDataset/sparql> .
 
 <https://um.es/graph/alzheimer> a sd:Graph ;
     rdfs:label "Grafo RDF de Enfermedad de Alzheimer"@es ;
     dct:description "Grafo nombrado que contiene todas las tripletas RDF del dataset"@es ;
-    void:triples "520"^^xsd:integer .
+    void:triples "488"^^xsd:integer .
 
-<https://orcid.org/0000-0000-0000-0000> a foaf:Person ;
+<https://um.es/person/JuanAndresSerratHurtado> a foaf:Person ;
     foaf:name "Juan Andrés Serrat Hurtado" ;
     foaf:mbox <mailto:jandres.serrat@um.es> ;
     foaf:homepage <https://github.com/alumno25> ;
@@ -68,18 +70,18 @@
     rdfs:label "Creación del dataset de Enfermedad de Alzheimer"@es ;
     prov:startedAtTime "2025-01-05T10:00:00Z"^^xsd:dateTime ;
     prov:endedAtTime "2025-01-10T18:00:00Z"^^xsd:dateTime ;
-    prov:wasAssociatedWith <https://orcid.org/0000-0000-0000-0000> ;
+    prov:wasAssociatedWith <https://um.es/person/JuanAndresSerratHurtado> ;
     prov:used <https://www.ncbi.nlm.nih.gov/clinvar/> ;
     prov:used <https://www.uniprot.org/> ;
     prov:used <https://hpo.jax.org/> ;
     prov:used <https://www.ncbi.nlm.nih.gov/gene/> ;
     prov:used <https://go.drugbank.com/> ;
     rdfs:comment """El dataset fue construido mediante:
-    1. Búsqueda de variantes genéticas en ClinVar asociadas a Enfermedad de Alzheimer
-    2. Obtención de información de proteínas desde UniProt (APP, PSEN1, PSEN2, APOE, MAPT)
-    3. Clasificación de fenotipos con Human Phenotype Ontology
-    4. Modelado en formato Turtle y validación con W3C Validator
-    5. Publicación en triple store Blazegraph siguiendo principios FAIR"""@es .
+1. Búsqueda de variantes genéticas en ClinVar asociadas a Enfermedad de Alzheimer
+2. Obtención de información de proteínas desde UniProt (APP, PSEN1, PSEN2, APOE, MAPT)
+3. Clasificación de fenotipos con Human Phenotype Ontology
+4. Modelado en formato Turtle y validación con herramientas del W3C
+5. Publicación en triple store Blazegraph siguiendo los principios FAIR"""@es .
 
 <https://um.es/data/AlzheimerDataset/rdf> a dcat:Distribution ;
     dct:title "Archivo RDF en formato Turtle"@es ;
@@ -109,7 +111,7 @@
     dcat:servesDataset <https://um.es/data/AlzheimerDataset> ;
     dct:conformsTo <https://www.w3.org/TR/sparql11-protocol/> .
 
-<https://um.es/data/AlzheimerDataset> 
+<https://um.es/data/AlzheimerDataset>
     void:vocabulary <http://purl.obolibrary.org/obo/SO_> ;
     void:vocabulary <http://purl.obolibrary.org/obo/HP_> ;
     void:vocabulary <http://purl.obolibrary.org/obo/GO_> ;
@@ -117,7 +119,7 @@
     void:vocabulary <http://purl.obolibrary.org/obo/DOID_> ;
     void:vocabulary <http://purl.uniprot.org/core/> ;
     void:vocabulary <https://w3id.org/biolink/vocab/> ;
-    
+
     dct:references <https://www.ncbi.nlm.nih.gov/clinvar/> ;
     dct:references <https://www.uniprot.org/> ;
     dct:references <https://hpo.jax.org/> ;
