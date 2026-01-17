@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:ns0="http://alzheimer_ontologia.um.es/">
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/causadaPor">
+    <rdfs:label xml:lang="es">causada por</rdfs:label>
+    <rdfs:comment xml:lang="es">Relación entre enfermedad y variante genética</rdfs:comment>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0003302"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/afectaGen">
+    <rdfs:label xml:lang="es">afecta gen</rdfs:label>
+    <owl:sameAs rdf:resource="https://w3id.org/biolink/vocab/affects"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/codifica">
+    <rdfs:label xml:lang="es">codifica</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002205"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/participaEn">
+    <rdfs:label xml:lang="es">participa en</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/tratadaCon">
+    <rdfs:label xml:lang="es">tratada con</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002302"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/tieneFenotipo">
+    <rdfs:label xml:lang="es">tiene fenotipo</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002200"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/localizadaEn">
+    <rdfs:label xml:lang="es">localizada en</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/tieneFrecuenciaAlelica">
+    <rdfs:label xml:lang="es">tiene frecuencia alélica</rdfs:label>
+    <rdfs:comment xml:lang="es">Frecuencia del alelo en la población</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/aumentaRiesgo">
+    <rdfs:label xml:lang="es">aumenta riesgo</rdfs:label>
+    <rdfs:comment xml:lang="es">La variante aumenta el riesgo de desarrollar la enfermedad</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/protegeDe">
+    <rdfs:label xml:lang="es">protege de</rdfs:label>
+    <rdfs:comment xml:lang="es">La variante reduce el riesgo de desarrollar la enfermedad</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/tieneComorbilidad">
+    <rdfs:label xml:lang="es">tiene comorbilidad</rdfs:label>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="http://alzheimer_ontologia.um.es/causaMutacion">
+    <rdfs:label xml:lang="es">causa mutación</rdfs:label>
+    <rdfs:comment xml:lang="es">Mutación que causa la forma familiar de la enfermedad</rdfs:comment>
+  </rdf:Property>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/DOID_10652"/>
+    <rdfs:label xml:lang="es">Enfermedad de Alzheimer</rdfs:label>
+    <rdfs:label xml:lang="en">Alzheimer Disease</rdfs:label>
+    <rdfs:comment xml:lang="es">Trastorno neurodegenerativo progresivo caracterizado por deterioro cognitivo, pérdida de memoria y acumulación de placas beta-amiloide y ovillos neurofibrilares</rdfs:comment>
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_Val717Ile">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Val717Ile (V717I)</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense en APP asociada a Alzheimer familiar de inicio temprano. Aumenta producción de Aβ42</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/2"/>
+        <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_APP"/>
+        <ns0:localizadaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/Exon17_APP"/>
+        <ns0:causaMutacion rdf:resource="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.00001</ns0:tieneFrecuenciaAlelica>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_Glu693Gln">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Glu693Gln (E693Q Dutch)</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación Dutch en APP. Causa angiopatía amiloide cerebral con Alzheimer</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/16896"/>
+        <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_APP"/>
+        <ns0:localizadaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/Exon17_APP"/>
+        <ns0:causaMutacion rdf:resource="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.000005</ns0:tieneFrecuenciaAlelica>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_Ala431Glu">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Ala431Glu (A431E)</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación en PSEN1 que causa Alzheimer familiar de inicio muy temprano (30-40 años)</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/16944"/>
+        <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_PSEN1"/>
+        <ns0:localizadaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Exon12_PSEN1">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000147"/>
+            <rdfs:label xml:lang="es">Exón 12 de PSEN1</rdfs:label>
+          </rdf:Description>
+        </ns0:localizadaEn>
+
+        <ns0:causaMutacion rdf:resource="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.000008</ns0:tieneFrecuenciaAlelica>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_Met139Val">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Met139Val (M139V)</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación patogénica en PSEN1 asociada a inicio temprano y deterioro cognitivo rápido</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/16952"/>
+        <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_PSEN1"/>
+        <ns0:localizadaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Exon5_PSEN1">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000147"/>
+            <rdfs:label xml:lang="es">Exón 5 de PSEN1</rdfs:label>
+          </rdf:Description>
+        </ns0:localizadaEn>
+
+        <ns0:causaMutacion rdf:resource="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.000006</ns0:tieneFrecuenciaAlelica>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_APOE_e4">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001059"/>
+        <rdfs:label xml:lang="es">APOE ε4 (epsilon 4)</rdfs:label>
+        <rdfs:comment xml:lang="es">Alelo de riesgo principal para Alzheimer esporádico. Una copia aumenta riesgo 3x, dos copias 12x</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/163093"/>
+        <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_APOE"/>
+        <ns0:localizadaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/Exon4_APOE"/>
+        <ns0:aumentaRiesgo rdf:resource="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.14</ns0:tieneFrecuenciaAlelica>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/FenotipoCognitivo">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0100543"/>
+        <rdfs:label xml:lang="es">Deterioro Cognitivo</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/PerdidaMemoria">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002354"/>
+            <rdfs:label xml:lang="es">Pérdida de Memoria</rdfs:label>
+            <rdfs:comment xml:lang="es">Pérdida progresiva de memoria a corto y largo plazo</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Desorientacion">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001289"/>
+            <rdfs:label xml:lang="es">Desorientación</rdfs:label>
+            <rdfs:comment xml:lang="es">Desorientación temporal y espacial</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/ApraxiaConstructiva">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0010526"/>
+            <rdfs:label xml:lang="es">Apraxia Constructiva</rdfs:label>
+            <rdfs:comment xml:lang="es">Dificultad para realizar tareas constructivas y espaciales</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/AlteracionLenguaje">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002463"/>
+            <rdfs:label xml:lang="es">Alteración del Lenguaje</rdfs:label>
+            <rdfs:comment xml:lang="es">Afasia progresiva y dificultad para encontrar palabras</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/FenotipoComportamental">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000708"/>
+        <rdfs:label xml:lang="es">Alteraciones Conductuales</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Agitacion">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000713"/>
+            <rdfs:label xml:lang="es">Agitación</rdfs:label>
+            <rdfs:comment xml:lang="es">Inquietud psicomotora y agitación</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Depresion">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000716"/>
+            <rdfs:label xml:lang="es">Depresión</rdfs:label>
+            <rdfs:comment xml:lang="es">Síntomas depresivos frecuentes en fases tempranas</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Apatia">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000745"/>
+            <rdfs:label xml:lang="es">Apatía</rdfs:label>
+            <rdfs:comment xml:lang="es">Pérdida de motivación e iniciativa</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Agresividad">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000718"/>
+            <rdfs:label xml:lang="es">Agresividad</rdfs:label>
+            <rdfs:comment xml:lang="es">Comportamiento agresivo en fases avanzadas</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/FenotipoNeurologico">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000707"/>
+        <rdfs:label xml:lang="es">Manifestaciones Neurológicas</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/AtrofiaCerebral">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002059"/>
+            <rdfs:label xml:lang="es">Atrofia Cerebral</rdfs:label>
+            <rdfs:comment xml:lang="es">Atrofia cortical progresiva especialmente en hipocampo y corteza temporal</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/ConvulsionesEpilépticas">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001250"/>
+            <rdfs:label xml:lang="es">Convulsiones</rdfs:label>
+            <rdfs:comment xml:lang="es">Aumenta incidencia de epilepsia en pacientes con Alzheimer</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/TrastornoMarcha">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001288"/>
+            <rdfs:label xml:lang="es">Trastorno de la Marcha</rdfs:label>
+            <rdfs:comment xml:lang="es">Alteraciones de marcha y equilibrio en fases avanzadas</rdfs:comment>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+    <ns0:tratadaCon>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Donepezil">
+        <rdf:type rdf:resource="https://go.drugbank.com/drugs/DB00843"/>
+        <rdfs:label xml:lang="es">Donepezilo</rdfs:label>
+        <rdfs:comment xml:lang="es">Inhibidor de acetilcolinesterasa. Primera línea de tratamiento sintomático</rdfs:comment>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/InhibicionAcetilcolinesterasa"/>
+      </rdf:Description>
+    </ns0:tratadaCon>
+
+    <ns0:tratadaCon>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Memantine">
+        <rdf:type rdf:resource="https://go.drugbank.com/drugs/DB01043"/>
+        <rdfs:label xml:lang="es">Memantina</rdfs:label>
+        <rdfs:comment xml:lang="es">Antagonista de receptor NMDA. Usado en Alzheimer moderado-severo</rdfs:comment>
+        <ns0:participaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/AntagonismoNMDA">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004972"/>
+            <rdfs:label xml:lang="es">Antagonismo de Receptor NMDA</rdfs:label>
+          </rdf:Description>
+        </ns0:participaEn>
+
+      </rdf:Description>
+    </ns0:tratadaCon>
+
+    <ns0:tratadaCon>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Rivastigmine">
+        <rdf:type rdf:resource="https://go.drugbank.com/drugs/DB00989"/>
+        <rdfs:label xml:lang="es">Rivastigmina</rdfs:label>
+        <rdfs:comment xml:lang="es">Inhibidor de acetilcolinesterasa y butirilcolinesterasa</rdfs:comment>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/InhibicionAcetilcolinesterasa"/>
+      </rdf:Description>
+    </ns0:tratadaCon>
+
+    <ns0:tratadaCon>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Galantamine">
+        <rdf:type rdf:resource="https://go.drugbank.com/drugs/DB00674"/>
+        <rdfs:label xml:lang="es">Galantamina</rdfs:label>
+        <rdfs:comment xml:lang="es">Inhibidor de acetilcolinesterasa con efecto modulador nicotínico</rdfs:comment>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/InhibicionAcetilcolinesterasa"/>
+      </rdf:Description>
+    </ns0:tratadaCon>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Gen_APP">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+    <rdfs:label xml:lang="es">APP</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/351"/>
+    <rdfs:comment xml:lang="es">Amyloid Beta Precursor Protein. Codifica la proteína precursora de amiloide, cuyo procesamiento anormal produce péptidos beta-amiloide</rdfs:comment>
+    <ns0:codifica>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Proteina_APP">
+        <rdf:type rdf:resource="http://purl.uniprot.org/uniprot/P05067"/>
+        <rdfs:label xml:lang="es">Proteína APP</rdfs:label>
+        <rdfs:comment xml:lang="es">Proteína precursora de amiloide. Su procesamiento anormal genera péptidos Aβ42 que forman placas amiloides</rdfs:comment>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/ProcesoBetaAmiloide"/>
+        <ns0:participaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/ProcesoNeurodegeneration">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0070997"/>
+            <rdfs:label xml:lang="es">Muerte Neuronal</rdfs:label>
+          </rdf:Description>
+        </ns0:participaEn>
+
+      </rdf:Description>
+    </ns0:codifica>
+
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Cromosoma21">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000340"/>
+        <rdfs:label xml:lang="es">Cromosoma 21</rdfs:label>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Gen_PSEN1">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+    <rdfs:label xml:lang="es">PSEN1</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/5663"/>
+    <rdfs:comment xml:lang="es">Presenilin 1. Componente del complejo gamma-secretasa que procesa APP. Mutaciones causan Alzheimer familiar de inicio temprano</rdfs:comment>
+    <ns0:codifica>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Proteina_PSEN1">
+        <rdf:type rdf:resource="http://purl.uniprot.org/uniprot/P49768"/>
+        <rdfs:label xml:lang="es">Proteína PSEN1</rdfs:label>
+        <rdfs:comment xml:lang="es">Presenilina 1, subunidad catalítica del complejo gamma-secretasa</rdfs:comment>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/ActividadGammaSecretasa"/>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/ProcesoBetaAmiloide"/>
+      </rdf:Description>
+    </ns0:codifica>
+
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Cromosoma14">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000340"/>
+        <rdfs:label xml:lang="es">Cromosoma 14</rdfs:label>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Gen_PSEN2">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+    <rdfs:label xml:lang="es">PSEN2</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/5664"/>
+    <rdfs:comment xml:lang="es">Presenilin 2. Homólogo de PSEN1, también componente de gamma-secretasa</rdfs:comment>
+    <ns0:codifica>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Proteina_PSEN2">
+        <rdf:type rdf:resource="http://purl.uniprot.org/uniprot/P49810"/>
+        <rdfs:label xml:lang="es">Proteína PSEN2</rdfs:label>
+        <rdfs:comment xml:lang="es">Presenilina 2, homóloga funcional de PSEN1</rdfs:comment>
+        <ns0:participaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/ActividadGammaSecretasa"/>
+      </rdf:Description>
+    </ns0:codifica>
+
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Cromosoma1">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000340"/>
+        <rdfs:label xml:lang="es">Cromosoma 1</rdfs:label>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Gen_APOE">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+    <rdfs:label xml:lang="es">APOE</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/348"/>
+    <rdfs:comment xml:lang="es">Apolipoprotein E. Principal factor de riesgo genético para Alzheimer esporádico de inicio tardío</rdfs:comment>
+    <ns0:codifica>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Proteina_APOE">
+        <rdf:type rdf:resource="http://purl.uniprot.org/uniprot/P02649"/>
+        <rdfs:label xml:lang="es">Proteína APOE</rdfs:label>
+        <rdfs:comment xml:lang="es">Apolipoproteína E. Involucrada en transporte de lípidos y clearance de beta-amiloide</rdfs:comment>
+        <ns0:participaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/TransporteLipidos">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0006869"/>
+            <rdfs:label xml:lang="es">Transporte de Lípidos</rdfs:label>
+          </rdf:Description>
+        </ns0:participaEn>
+
+        <ns0:participaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/ClearanceAmiloide">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0034205"/>
+            <rdfs:label xml:lang="es">Clearance de Beta-Amiloide</rdfs:label>
+          </rdf:Description>
+        </ns0:participaEn>
+
+      </rdf:Description>
+    </ns0:codifica>
+
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Cromosoma19">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000340"/>
+        <rdfs:label xml:lang="es">Cromosoma 19</rdfs:label>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Gen_MAPT">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+    <rdfs:label xml:lang="es">MAPT</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/4137"/>
+    <rdfs:comment xml:lang="es">Microtubule Associated Protein Tau. Codifica la proteína tau, que se hiperfosforila formando ovillos neurofibrilares</rdfs:comment>
+    <ns0:codifica>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Proteina_MAPT">
+        <rdf:type rdf:resource="http://purl.uniprot.org/uniprot/P10636"/>
+        <rdfs:label xml:lang="es">Proteína Tau</rdfs:label>
+        <rdfs:comment xml:lang="es">Proteína tau asociada a microtúbulos. Su hiperfosforilación causa agregación en ovillos neurofibrilares</rdfs:comment>
+        <ns0:participaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/EstabilizacionMicrotubulos">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0007025"/>
+            <rdfs:label xml:lang="es">Estabilización de Microtúbulos</rdfs:label>
+          </rdf:Description>
+        </ns0:participaEn>
+
+        <ns0:participaEn>
+          <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/FormacionOvillos">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0097342"/>
+            <rdfs:label xml:lang="es">Agregación de Proteína Tau</rdfs:label>
+          </rdf:Description>
+        </ns0:participaEn>
+
+      </rdf:Description>
+    </ns0:codifica>
+
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Cromosoma17">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000340"/>
+        <rdfs:label xml:lang="es">Cromosoma 17</rdfs:label>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_APOE_e2">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001059"/>
+    <rdfs:label xml:lang="es">APOE ε2 (epsilon 2)</rdfs:label>
+    <rdfs:comment xml:lang="es">Alelo protector contra Alzheimer. Reduce riesgo aproximadamente 40%</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/163092"/>
+    <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_APOE"/>
+    <ns0:localizadaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/Exon4_APOE"/>
+    <ns0:protegeDe rdf:resource="http://dayhoff.inf.um.es:3049/data/AlzheimerDisease"/>
+    <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.08</ns0:tieneFrecuenciaAlelica>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Variante_APOE_e3">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001059"/>
+    <rdfs:label xml:lang="es">APOE ε3 (epsilon 3)</rdfs:label>
+    <rdfs:comment xml:lang="es">Alelo más común de APOE. Riesgo neutro para Alzheimer</rdfs:comment>
+    <ns0:afectaGen rdf:resource="http://dayhoff.inf.um.es:3049/data/Gen_APOE"/>
+    <ns0:localizadaEn rdf:resource="http://dayhoff.inf.um.es:3049/data/Exon4_APOE"/>
+    <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.78</ns0:tieneFrecuenciaAlelica>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/ProcesoBetaAmiloide">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_1900221"/>
+    <rdfs:label xml:lang="es">Formación de Placas Beta-Amiloide</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/ActividadGammaSecretasa">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004190"/>
+    <rdfs:label xml:lang="es">Actividad Gamma-Secretasa</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/InhibicionAcetilcolinesterasa">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001975"/>
+    <rdfs:label xml:lang="es">Inhibición de Acetilcolinesterasa</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Exon17_APP">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000147"/>
+    <rdfs:label xml:lang="es">Exón 17 de APP</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dayhoff.inf.um.es:3049/data/Exon4_APOE">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000147"/>
+    <rdfs:label xml:lang="es">Exón 4 de APOE</rdfs:label>
+  </rdf:Description>
+
+</rdf:RDF>
