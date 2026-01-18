@@ -10,7 +10,7 @@ PREFIX alz_o: <http://alzheimer_ontologia.um.es/>
 SELECT ?sujeto ?predicado ?objeto
 WHERE {
   ?sujeto ?predicado ?objeto .
-  FILTER(STRSTARTS(STR(?sujeto), \"http://dayhoff.inf.um.es:3050/data/\"))
+  FILTER(STRSTARTS(STR(?sujeto), \"http://dayhoff.inf.um.es:8189/data/\"))
 }
 LIMIT 50
 "
@@ -20,7 +20,7 @@ resultado0 <- SPARQL(endpoint, query0)
 limpiar_literal <- function(x) {
   if (is.character(x)) {
     x <- gsub('^\"([^\"]*)\"(@[a-z]+)?$', '\\1', x)
-    x <- gsub('^http://dayhoff.inf.um.es:3050/data/(.+)$', '\\1', x)
+    x <- gsub('^http://dayhoff.inf.um.es:8189/data/(.+)$', '\\1', x)
   }
   return(x)
 }
@@ -45,7 +45,7 @@ WHERE {
   ?variante alz_o:tieneFrecuenciaAlelica ?frecuencia .
   BIND(STR(?varianteLabel) AS ?nombreVariante)
   BIND(STR(?genLabel) AS ?nombreGen)
-  FILTER(STRSTARTS(STR(?variante), \"http://dayhoff.inf.um.es:3050/data/\"))
+  FILTER(STRSTARTS(STR(?variante), \"http://dayhoff.inf.um.es:8189/data/\"))
 }
 ORDER BY DESC(?frecuencia)
 "
@@ -72,7 +72,7 @@ WHERE {
   BIND(STR(?genLabel) AS ?nombreGen)
   BIND(STR(?proteinaLabel) AS ?nombreProteina)
   BIND(STR(?procesoLabel) AS ?nombreProceso)
-  FILTER(STRSTARTS(STR(?gen), \"http://dayhoff.inf.um.es:3050/data/\"))
+  FILTER(STRSTARTS(STR(?gen), \"http://dayhoff.inf.um.es:8189/data/\"))
 }
 ORDER BY ?nombreGen
 "
@@ -90,7 +90,7 @@ PREFIX alz_o: <http://alzheimer_ontologia.um.es/>
 SELECT ?variante ?nombreVariante ?gen ?nombreGen ?efecto
 WHERE {
   {
-    ?variante alz_o:aumentaRiesgo <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> .
+    ?variante alz_o:aumentaRiesgo <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> .
     ?variante rdfs:label ?varianteLabel .
     ?variante alz_o:afectaGen ?gen .
     ?gen rdfs:label ?genLabel .
@@ -100,7 +100,7 @@ WHERE {
   }
   UNION
   {
-    ?variante alz_o:protegeDe <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> .
+    ?variante alz_o:protegeDe <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> .
     ?variante rdfs:label ?varianteLabel .
     ?variante alz_o:afectaGen ?gen .
     ?gen rdfs:label ?genLabel .
@@ -110,7 +110,7 @@ WHERE {
   }
   UNION
   {
-    ?variante alz_o:causaMutacion <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> .
+    ?variante alz_o:causaMutacion <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> .
     ?variante rdfs:label ?varianteLabel .
     ?variante alz_o:afectaGen ?gen .
     ?gen rdfs:label ?genLabel .
@@ -134,7 +134,7 @@ PREFIX alz_o: <http://alzheimer_ontologia.um.es/>
 
 SELECT DISTINCT ?categoria ?fenotipoNombre ?comentario
 WHERE {
-  <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> alz_o:tieneFenotipo ?categoriaFenotipo .
+  <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> alz_o:tieneFenotipo ?categoriaFenotipo .
   ?categoriaFenotipo rdfs:label ?categoriaLabel .
   ?categoriaFenotipo alz_o:tieneFenotipo ?fenotipo .
   ?fenotipo rdfs:label ?fenotipoLabel .
@@ -161,7 +161,7 @@ PREFIX alz_o: <http://alzheimer_ontologia.um.es/>
 
 SELECT ?farmaco ?nombreFarmaco ?comentario ?mecanismo
 WHERE {
-  <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> alz_o:tratadaCon ?farmaco .
+  <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> alz_o:tratadaCon ?farmaco .
   ?farmaco rdfs:label ?farmacoLabel .
   ?farmaco rdfs:comment ?comentarioRaw .
   BIND(STR(?farmacoLabel) AS ?nombreFarmaco)

@@ -1,13 +1,22 @@
 version: "3"
-
 services:
-  blazegraph:
-    image: lyrasis/blazegraph:2.1.5
+  sparql_endpoint:
+    image: blazegraph
     container_name: blazegraph-alz
     ports:
-      - "3049:8080"
-    volumes:
-      - ./blazegraph-data:/var/lib/blazegraph
+      - "3049:9999"
+    restart: unless-stopped
+
+  linked_data_server:
+    image: ghcr.io/zazuko/trifid
+    container_name: trifid-alz
+    ports:
+      - "8189:8080"
     environment:
-      - BLAZEGRAPH_OPTS=-Djetty.port=8080
+      SPARQL_ENDPOINT_URL: "http://sparql_endpoint:9999/blazegraph/namespace/ALZgrafo/sparql"
+      DATASET_BASE_URL: "http://dayhoff.inf.um.es:8189/"
+      TRIFID_SPARQL_ENDPOINT_URL: "http://sparql_endpoint:9999/blazegraph/namespace/ALZgrafo/sparql"
+      DEBUG: "trifid:*"
+    depends_on:
+      - sparql_endpoint
     restart: unless-stopped

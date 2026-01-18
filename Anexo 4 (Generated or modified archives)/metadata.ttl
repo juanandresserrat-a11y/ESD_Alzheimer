@@ -8,7 +8,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://um.es/data/AlzheimerDataset> a dcat:Dataset ;
+<http://dayhoff.inf.um.es:8189/data/AlzheimerDataset> a dcat:Dataset ;
     dct:title "Grafo de Conocimiento: Enfermedad de Alzheimer"@es ;
     dct:title "Knowledge Graph: Alzheimer Disease"@en ;
     dct:description """Grafo RDF que integra información genética, molecular y clínica sobre la Enfermedad de Alzheimer.
@@ -17,9 +17,9 @@ fenotipos clínicos (cognitivos, conductuales, neurológicos) y tratamientos far
 El dataset utiliza ontologías estándar como Sequence Ontology, Human Phenotype Ontology, Gene Ontology
 y el modelo BioLink, y se enlaza con recursos externos como UniProt, ClinVar y DrugBank."""@es ;
 
-    dct:creator <https://um.es/person/JuanAndresSerratHurtado> ;
+    dct:creator <http://dayhoff.inf.um.es:8189/person/JuanAndresSerratHurtado> ;
     dct:created "2025-01-10"^^xsd:date ;
-    dct:modified "2025-01-10"^^xsd:date ;
+    dct:modified "2025-01-18"^^xsd:date ;
     dct:issued "2025-01-10"^^xsd:date ;
 
     dct:language <http://id.loc.gov/vocabulary/iso639-1/es> ;
@@ -42,35 +42,35 @@ y el modelo BioLink, y se enlaza con recursos externos como UniProt, ClinVar y D
     dct:conformsTo <https://www.w3.org/TR/rdf11-concepts/> ;
     dct:conformsTo <https://www.w3.org/TR/sparql11-query/> ;
 
-    dcat:landingPage <https://github.com/alumno25/Practica_alzheimer> ;
+    dcat:landingPage <http://dayhoff.inf.um.es:8189/> ;
 
-    void:triples "488"^^xsd:integer ;
-    void:entities "140"^^xsd:integer ;
-    void:properties "40"^^xsd:integer ;
+    void:triples "262"^^xsd:integer ;
+    void:entities "85"^^xsd:integer ;
+    void:properties "30"^^xsd:integer ;
 
-    dct:source <http://dayhoff.inf.um.es:3050/data/> ;
+    dct:source <http://dayhoff.inf.um.es:8189/data/> ;
 
-    prov:wasGeneratedBy <https://um.es/activity/alzheimer_dataset_creation> ;
+    prov:wasGeneratedBy <http://dayhoff.inf.um.es:8189/activity/alzheimer_dataset_creation> ;
 
-    dcat:distribution <https://um.es/data/AlzheimerDataset/rdf> ;
-    dcat:distribution <https://um.es/data/AlzheimerDataset/sparql> .
+    dcat:distribution <http://dayhoff.inf.um.es:8189/data/AlzheimerDataset/rdf> ;
+    dcat:distribution <http://dayhoff.inf.um.es:8189/data/AlzheimerDataset/sparql> .
 
-<https://um.es/graph/alzheimer> a sd:Graph ;
+<http://dayhoff.inf.um.es:8189/graph/alzheimer> a sd:Graph ;
     rdfs:label "Grafo RDF de Enfermedad de Alzheimer"@es ;
     dct:description "Grafo nombrado que contiene todas las tripletas RDF del dataset"@es ;
-    void:triples "488"^^xsd:integer .
+    void:triples "262"^^xsd:integer .
 
-<https://um.es/person/JuanAndresSerratHurtado> a foaf:Person ;
+<http://dayhoff.inf.um.es:8189/person/JuanAndresSerratHurtado> a foaf:Person ;
     foaf:name "Juan Andrés Serrat Hurtado" ;
     foaf:mbox <mailto:jandres.serrat@um.es> ;
     foaf:homepage <https://github.com/alumno25> ;
-    foaf:Organization "Universidad de Murcia" .
+    foaf:organization "Universidad de Murcia" .
 
-<https://um.es/activity/alzheimer_dataset_creation> a prov:Activity ;
+<http://dayhoff.inf.um.es:8189/activity/alzheimer_dataset_creation> a prov:Activity ;
     rdfs:label "Creación del dataset de Enfermedad de Alzheimer"@es ;
     prov:startedAtTime "2025-01-05T10:00:00Z"^^xsd:dateTime ;
-    prov:endedAtTime "2025-01-10T18:00:00Z"^^xsd:dateTime ;
-    prov:wasAssociatedWith <https://um.es/person/JuanAndresSerratHurtado> ;
+    prov:endedAtTime "2025-01-18T11:15:00Z"^^xsd:dateTime ;
+    prov:wasAssociatedWith <http://dayhoff.inf.um.es:8189/person/JuanAndresSerratHurtado> ;
     prov:used <https://www.ncbi.nlm.nih.gov/clinvar/> ;
     prov:used <https://www.uniprot.org/> ;
     prov:used <https://hpo.jax.org/> ;
@@ -80,38 +80,40 @@ y el modelo BioLink, y se enlaza con recursos externos como UniProt, ClinVar y D
 1. Búsqueda de variantes genéticas en ClinVar asociadas a Enfermedad de Alzheimer
 2. Obtención de información de proteínas desde UniProt (APP, PSEN1, PSEN2, APOE, MAPT)
 3. Clasificación de fenotipos con Human Phenotype Ontology
-4. Modelado en formato Turtle y validación con herramientas del W3C
-5. Publicación en triple store Blazegraph siguiendo los principios FAIR"""@es .
+4. Modelado en formato RDF/XML y validación con herramientas del W3C
+5. Publicación en triple store Blazegraph y servidor Linked Data Trifid siguiendo los principios FAIR"""@es .
 
-<https://um.es/data/AlzheimerDataset/rdf> a dcat:Distribution ;
-    dct:title "Archivo RDF en formato Turtle"@es ;
-    dct:description "Dataset completo descargable en formato Turtle (.ttl)"@es ;
-    dcat:accessURL <https://github.com/alumno25/Practica_alzheimer/blob/main/AlzheimerGrafo.ttl> ;
-    dcat:downloadURL <https://raw.githubusercontent.com/alumno25/Practica_alzheimer/main/AlzheimerGrafo.ttl> ;
-    dcat:mediaType "text/turtle" ;
-    dct:format <http://www.w3.org/ns/formats/Turtle> ;
-    dcat:byteSize "95000"^^xsd:decimal ;
+<http://dayhoff.inf.um.es:8189/data/AlzheimerDataset/rdf> a dcat:Distribution ;
+    dct:title "Archivo RDF en formato RDF/XML"@es ;
+    dct:description "Dataset completo descargable en formato RDF/XML"@es ;
+    dcat:accessURL <https://github.com/alumno25/Practica_alzheimer/blob/main/alzheimer_grafo.rdf> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/alumno25/Practica_alzheimer/main/alzheimer_grafo.rdf> ;
+    dcat:mediaType "application/rdf+xml" ;
+    dct:format <http://www.w3.org/ns/formats/RDF_XML> ;
+    dcat:byteSize "45000"^^xsd:decimal ;
     dct:issued "2025-01-10"^^xsd:date ;
+    dct:modified "2025-01-18"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> .
 
-<https://um.es/data/AlzheimerDataset/sparql> a dcat:Distribution ;
+<http://dayhoff.inf.um.es:8189/data/AlzheimerDataset/sparql> a dcat:Distribution ;
     dct:title "SPARQL Endpoint"@es ;
     dct:description "Acceso al dataset mediante consultas SPARQL en Blazegraph"@es ;
-    dcat:accessURL <http://dayhoff.inf.um.es:3050/blazegraph/namespace/ALZgrafo/sparql> ;
-    dcat:accessService <https://um.es/service/sparql> ;
+    dcat:accessURL <http://dayhoff.inf.um.es:3049/blazegraph/namespace/ALZgrafo/sparql> ;
+    dcat:accessService <http://dayhoff.inf.um.es:8189/service/sparql> ;
     dct:format <http://www.w3.org/ns/formats/SPARQL_Results_JSON> ;
     dct:issued "2025-01-10"^^xsd:date ;
+    dct:modified "2025-01-18"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> .
 
-<https://um.es/service/sparql> a dcat:DataService ;
+<http://dayhoff.inf.um.es:8189/service/sparql> a dcat:DataService ;
     dct:title "Servicio SPARQL Blazegraph"@es ;
     dct:description "Endpoint SPARQL público para consultar el grafo de Alzheimer"@es ;
-    dcat:endpointURL <http://dayhoff.inf.um.es:3050/blazegraph/namespace/ALZgrafo/sparql> ;
-    dcat:endpointDescription <http://dayhoff.inf.um.es:3050/blazegraph/namespace/ALZgrafo/sparql?describe> ;
-    dcat:servesDataset <https://um.es/data/AlzheimerDataset> ;
+    dcat:endpointURL <http://dayhoff.inf.um.es:3049/blazegraph/namespace/ALZgrafo/sparql> ;
+    dcat:endpointDescription <http://dayhoff.inf.um.es:3049/blazegraph/namespace/ALZgrafo/sparql?describe> ;
+    dcat:servesDataset <http://dayhoff.inf.um.es:8189/data/AlzheimerDataset> ;
     dct:conformsTo <https://www.w3.org/TR/sparql11-protocol/> .
 
-<https://um.es/data/AlzheimerDataset>
+<http://dayhoff.inf.um.es:8189/data/AlzheimerDataset>
     void:vocabulary <http://purl.obolibrary.org/obo/SO_> ;
     void:vocabulary <http://purl.obolibrary.org/obo/HP_> ;
     void:vocabulary <http://purl.obolibrary.org/obo/GO_> ;

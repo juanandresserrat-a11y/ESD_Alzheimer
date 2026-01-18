@@ -64,314 +64,314 @@
   rdfs:label "causa mutación"@es ;
   rdfs:comment "Mutación que causa la forma familiar de la enfermedad"@es .
 
-<http://dayhoff.inf.um.es:3050/data/AlzheimerDisease>
+<http://dayhoff.inf.um.es:8189/data/AlzheimerDisease>
   a <http://purl.obolibrary.org/obo/DOID_10652> ;
   rdfs:label "Enfermedad de Alzheimer"@es, "Alzheimer Disease"@en ;
   rdfs:comment "Trastorno neurodegenerativo progresivo caracterizado por deterioro cognitivo, pérdida de memoria y acumulación de placas beta-amiloide y ovillos neurofibrilares"@es ;
-  ns0:causadaPor <http://dayhoff.inf.um.es:3050/data/Variante_Val717Ile>, <http://dayhoff.inf.um.es:3050/data/Variante_Glu693Gln>, <http://dayhoff.inf.um.es:3050/data/Variante_Ala431Glu>, <http://dayhoff.inf.um.es:3050/data/Variante_Met139Val>, <http://dayhoff.inf.um.es:3050/data/Variante_APOE_e4> ;
-  ns0:tieneFenotipo <http://dayhoff.inf.um.es:3050/data/FenotipoCognitivo>, <http://dayhoff.inf.um.es:3050/data/FenotipoComportamental>, <http://dayhoff.inf.um.es:3050/data/FenotipoNeurologico> ;
-  ns0:tratadaCon <http://dayhoff.inf.um.es:3050/data/Donepezil>, <http://dayhoff.inf.um.es:3050/data/Memantine>, <http://dayhoff.inf.um.es:3050/data/Rivastigmine>, <http://dayhoff.inf.um.es:3050/data/Galantamine> .
+  ns0:causadaPor <http://dayhoff.inf.um.es:8189/data/Variante_Val717Ile>, <http://dayhoff.inf.um.es:8189/data/Variante_Glu693Gln>, <http://dayhoff.inf.um.es:8189/data/Variante_Ala431Glu>, <http://dayhoff.inf.um.es:8189/data/Variante_Met139Val>, <http://dayhoff.inf.um.es:8189/data/Variante_APOE_e4> ;
+  ns0:tieneFenotipo <http://dayhoff.inf.um.es:8189/data/FenotipoCognitivo>, <http://dayhoff.inf.um.es:8189/data/FenotipoComportamental>, <http://dayhoff.inf.um.es:8189/data/FenotipoNeurologico> ;
+  ns0:tratadaCon <http://dayhoff.inf.um.es:8189/data/Donepezil>, <http://dayhoff.inf.um.es:8189/data/Memantine>, <http://dayhoff.inf.um.es:8189/data/Rivastigmine>, <http://dayhoff.inf.um.es:8189/data/Galantamine> .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_Val717Ile>
+<http://dayhoff.inf.um.es:8189/data/Variante_Val717Ile>
   a <http://purl.obolibrary.org/obo/SO_0001583> ;
   rdfs:label "p.Val717Ile (V717I)"@es ;
   rdfs:comment "Mutación missense en APP asociada a Alzheimer familiar de inicio temprano. Aumenta producción de Aβ42"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/clinvar/variation/2> ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_APP> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon17_APP> ;
-  ns0:causaMutacion <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_APP> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon17_APP> ;
+  ns0:causaMutacion <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> ;
   ns0:tieneFrecuenciaAlelica "0.00001"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_Glu693Gln>
+<http://dayhoff.inf.um.es:8189/data/Variante_Glu693Gln>
   a <http://purl.obolibrary.org/obo/SO_0001583> ;
   rdfs:label "p.Glu693Gln (E693Q Dutch)"@es ;
   rdfs:comment "Mutación Dutch en APP. Causa angiopatía amiloide cerebral con Alzheimer"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/clinvar/variation/16896> ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_APP> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon17_APP> ;
-  ns0:causaMutacion <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_APP> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon17_APP> ;
+  ns0:causaMutacion <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> ;
   ns0:tieneFrecuenciaAlelica "0.000005"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_Ala431Glu>
+<http://dayhoff.inf.um.es:8189/data/Variante_Ala431Glu>
   a <http://purl.obolibrary.org/obo/SO_0001583> ;
   rdfs:label "p.Ala431Glu (A431E)"@es ;
   rdfs:comment "Mutación en PSEN1 que causa Alzheimer familiar de inicio muy temprano (30-40 años)"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/clinvar/variation/16944> ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_PSEN1> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon12_PSEN1> ;
-  ns0:causaMutacion <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_PSEN1> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon12_PSEN1> ;
+  ns0:causaMutacion <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> ;
   ns0:tieneFrecuenciaAlelica "0.000008"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/Exon12_PSEN1>
+<http://dayhoff.inf.um.es:8189/data/Exon12_PSEN1>
   a <http://purl.obolibrary.org/obo/SO_0000147> ;
   rdfs:label "Exón 12 de PSEN1"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_Met139Val>
+<http://dayhoff.inf.um.es:8189/data/Variante_Met139Val>
   a <http://purl.obolibrary.org/obo/SO_0001583> ;
   rdfs:label "p.Met139Val (M139V)"@es ;
   rdfs:comment "Mutación patogénica en PSEN1 asociada a inicio temprano y deterioro cognitivo rápido"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/clinvar/variation/16952> ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_PSEN1> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon5_PSEN1> ;
-  ns0:causaMutacion <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_PSEN1> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon5_PSEN1> ;
+  ns0:causaMutacion <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> ;
   ns0:tieneFrecuenciaAlelica "0.000006"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/Exon5_PSEN1>
+<http://dayhoff.inf.um.es:8189/data/Exon5_PSEN1>
   a <http://purl.obolibrary.org/obo/SO_0000147> ;
   rdfs:label "Exón 5 de PSEN1"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_APOE_e4>
+<http://dayhoff.inf.um.es:8189/data/Variante_APOE_e4>
   a <http://purl.obolibrary.org/obo/SO_0001059> ;
   rdfs:label "APOE ε4 (epsilon 4)"@es ;
   rdfs:comment "Alelo de riesgo principal para Alzheimer esporádico. Una copia aumenta riesgo 3x, dos copias 12x"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/clinvar/variation/163093> ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_APOE> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon4_APOE> ;
-  ns0:aumentaRiesgo <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_APOE> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon4_APOE> ;
+  ns0:aumentaRiesgo <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> ;
   ns0:tieneFrecuenciaAlelica "0.14"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/FenotipoCognitivo>
+<http://dayhoff.inf.um.es:8189/data/FenotipoCognitivo>
   a <http://purl.obolibrary.org/obo/HP_0100543> ;
   rdfs:label "Deterioro Cognitivo"@es ;
-  ns0:tieneFenotipo <http://dayhoff.inf.um.es:3050/data/PerdidaMemoria>, <http://dayhoff.inf.um.es:3050/data/Desorientacion>, <http://dayhoff.inf.um.es:3050/data/ApraxiaConstructiva>, <http://dayhoff.inf.um.es:3050/data/AlteracionLenguaje> .
+  ns0:tieneFenotipo <http://dayhoff.inf.um.es:8189/data/PerdidaMemoria>, <http://dayhoff.inf.um.es:8189/data/Desorientacion>, <http://dayhoff.inf.um.es:8189/data/ApraxiaConstructiva>, <http://dayhoff.inf.um.es:8189/data/AlteracionLenguaje> .
 
-<http://dayhoff.inf.um.es:3050/data/PerdidaMemoria>
+<http://dayhoff.inf.um.es:8189/data/PerdidaMemoria>
   a <http://purl.obolibrary.org/obo/HP_0002354> ;
   rdfs:label "Pérdida de Memoria"@es ;
   rdfs:comment "Pérdida progresiva de memoria a corto y largo plazo"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Desorientacion>
+<http://dayhoff.inf.um.es:8189/data/Desorientacion>
   a <http://purl.obolibrary.org/obo/HP_0001289> ;
   rdfs:label "Desorientación"@es ;
   rdfs:comment "Desorientación temporal y espacial"@es .
 
-<http://dayhoff.inf.um.es:3050/data/ApraxiaConstructiva>
+<http://dayhoff.inf.um.es:8189/data/ApraxiaConstructiva>
   a <http://purl.obolibrary.org/obo/HP_0010526> ;
   rdfs:label "Apraxia Constructiva"@es ;
   rdfs:comment "Dificultad para realizar tareas constructivas y espaciales"@es .
 
-<http://dayhoff.inf.um.es:3050/data/AlteracionLenguaje>
+<http://dayhoff.inf.um.es:8189/data/AlteracionLenguaje>
   a <http://purl.obolibrary.org/obo/HP_0002463> ;
   rdfs:label "Alteración del Lenguaje"@es ;
   rdfs:comment "Afasia progresiva y dificultad para encontrar palabras"@es .
 
-<http://dayhoff.inf.um.es:3050/data/FenotipoComportamental>
+<http://dayhoff.inf.um.es:8189/data/FenotipoComportamental>
   a <http://purl.obolibrary.org/obo/HP_0000708> ;
   rdfs:label "Alteraciones Conductuales"@es ;
-  ns0:tieneFenotipo <http://dayhoff.inf.um.es:3050/data/Agitacion>, <http://dayhoff.inf.um.es:3050/data/Depresion>, <http://dayhoff.inf.um.es:3050/data/Apatia>, <http://dayhoff.inf.um.es:3050/data/Agresividad> .
+  ns0:tieneFenotipo <http://dayhoff.inf.um.es:8189/data/Agitacion>, <http://dayhoff.inf.um.es:8189/data/Depresion>, <http://dayhoff.inf.um.es:8189/data/Apatia>, <http://dayhoff.inf.um.es:8189/data/Agresividad> .
 
-<http://dayhoff.inf.um.es:3050/data/Agitacion>
+<http://dayhoff.inf.um.es:8189/data/Agitacion>
   a <http://purl.obolibrary.org/obo/HP_0000713> ;
   rdfs:label "Agitación"@es ;
   rdfs:comment "Inquietud psicomotora y agitación"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Depresion>
+<http://dayhoff.inf.um.es:8189/data/Depresion>
   a <http://purl.obolibrary.org/obo/HP_0000716> ;
   rdfs:label "Depresión"@es ;
   rdfs:comment "Síntomas depresivos frecuentes en fases tempranas"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Apatia>
+<http://dayhoff.inf.um.es:8189/data/Apatia>
   a <http://purl.obolibrary.org/obo/HP_0000745> ;
   rdfs:label "Apatía"@es ;
   rdfs:comment "Pérdida de motivación e iniciativa"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Agresividad>
+<http://dayhoff.inf.um.es:8189/data/Agresividad>
   a <http://purl.obolibrary.org/obo/HP_0000718> ;
   rdfs:label "Agresividad"@es ;
   rdfs:comment "Comportamiento agresivo en fases avanzadas"@es .
 
-<http://dayhoff.inf.um.es:3050/data/FenotipoNeurologico>
+<http://dayhoff.inf.um.es:8189/data/FenotipoNeurologico>
   a <http://purl.obolibrary.org/obo/HP_0000707> ;
   rdfs:label "Manifestaciones Neurológicas"@es ;
-  ns0:tieneFenotipo <http://dayhoff.inf.um.es:3050/data/AtrofiaCerebral>, <http://dayhoff.inf.um.es:3050/data/ConvulsionesEpilépticas>, <http://dayhoff.inf.um.es:3050/data/TrastornoMarcha> .
+  ns0:tieneFenotipo <http://dayhoff.inf.um.es:8189/data/AtrofiaCerebral>, <http://dayhoff.inf.um.es:8189/data/ConvulsionesEpilépticas>, <http://dayhoff.inf.um.es:8189/data/TrastornoMarcha> .
 
-<http://dayhoff.inf.um.es:3050/data/AtrofiaCerebral>
+<http://dayhoff.inf.um.es:8189/data/AtrofiaCerebral>
   a <http://purl.obolibrary.org/obo/HP_0002059> ;
   rdfs:label "Atrofia Cerebral"@es ;
   rdfs:comment "Atrofia cortical progresiva especialmente en hipocampo y corteza temporal"@es .
 
-<http://dayhoff.inf.um.es:3050/data/ConvulsionesEpilépticas>
+<http://dayhoff.inf.um.es:8189/data/ConvulsionesEpilépticas>
   a <http://purl.obolibrary.org/obo/HP_0001250> ;
   rdfs:label "Convulsiones"@es ;
   rdfs:comment "Aumenta incidencia de epilepsia en pacientes con Alzheimer"@es .
 
-<http://dayhoff.inf.um.es:3050/data/TrastornoMarcha>
+<http://dayhoff.inf.um.es:8189/data/TrastornoMarcha>
   a <http://purl.obolibrary.org/obo/HP_0001288> ;
   rdfs:label "Trastorno de la Marcha"@es ;
   rdfs:comment "Alteraciones de marcha y equilibrio en fases avanzadas"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Donepezil>
+<http://dayhoff.inf.um.es:8189/data/Donepezil>
   a <https://go.drugbank.com/drugs/DB00843> ;
   rdfs:label "Donepezilo"@es ;
   rdfs:comment "Inhibidor de acetilcolinesterasa. Primera línea de tratamiento sintomático"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/InhibicionAcetilcolinesterasa> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/InhibicionAcetilcolinesterasa> .
 
-<http://dayhoff.inf.um.es:3050/data/Memantine>
+<http://dayhoff.inf.um.es:8189/data/Memantine>
   a <https://go.drugbank.com/drugs/DB01043> ;
   rdfs:label "Memantina"@es ;
   rdfs:comment "Antagonista de receptor NMDA. Usado en Alzheimer moderado-severo"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/AntagonismoNMDA> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/AntagonismoNMDA> .
 
-<http://dayhoff.inf.um.es:3050/data/AntagonismoNMDA>
+<http://dayhoff.inf.um.es:8189/data/AntagonismoNMDA>
   a <http://purl.obolibrary.org/obo/GO_0004972> ;
   rdfs:label "Antagonismo de Receptor NMDA"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Rivastigmine>
+<http://dayhoff.inf.um.es:8189/data/Rivastigmine>
   a <https://go.drugbank.com/drugs/DB00989> ;
   rdfs:label "Rivastigmina"@es ;
   rdfs:comment "Inhibidor de acetilcolinesterasa y butirilcolinesterasa"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/InhibicionAcetilcolinesterasa> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/InhibicionAcetilcolinesterasa> .
 
-<http://dayhoff.inf.um.es:3050/data/Galantamine>
+<http://dayhoff.inf.um.es:8189/data/Galantamine>
   a <https://go.drugbank.com/drugs/DB00674> ;
   rdfs:label "Galantamina"@es ;
   rdfs:comment "Inhibidor de acetilcolinesterasa con efecto modulador nicotínico"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/InhibicionAcetilcolinesterasa> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/InhibicionAcetilcolinesterasa> .
 
-<http://dayhoff.inf.um.es:3050/data/Gen_APP>
+<http://dayhoff.inf.um.es:8189/data/Gen_APP>
   a <http://purl.obolibrary.org/obo/SO_0000704> ;
   rdfs:label "APP"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/gene/351> ;
   rdfs:comment "Amyloid Beta Precursor Protein. Codifica la proteína precursora de amiloide, cuyo procesamiento anormal produce péptidos beta-amiloide"@es ;
-  ns0:codifica <http://dayhoff.inf.um.es:3050/data/Proteina_APP> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Cromosoma21> .
+  ns0:codifica <http://dayhoff.inf.um.es:8189/data/Proteina_APP> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Cromosoma21> .
 
-<http://dayhoff.inf.um.es:3050/data/Proteina_APP>
+<http://dayhoff.inf.um.es:8189/data/Proteina_APP>
   a <http://purl.uniprot.org/uniprot/P05067> ;
   rdfs:label "Proteína APP"@es ;
   rdfs:comment "Proteína precursora de amiloide. Su procesamiento anormal genera péptidos Aβ42 que forman placas amiloides"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/ProcesoBetaAmiloide>, <http://dayhoff.inf.um.es:3050/data/ProcesoNeurodegeneration> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/ProcesoBetaAmiloide>, <http://dayhoff.inf.um.es:8189/data/ProcesoNeurodegeneration> .
 
-<http://dayhoff.inf.um.es:3050/data/ProcesoNeurodegeneration>
+<http://dayhoff.inf.um.es:8189/data/ProcesoNeurodegeneration>
   a <http://purl.obolibrary.org/obo/GO_0070997> ;
   rdfs:label "Muerte Neuronal"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Cromosoma21>
+<http://dayhoff.inf.um.es:8189/data/Cromosoma21>
   a <http://purl.obolibrary.org/obo/SO_0000340> ;
   rdfs:label "Cromosoma 21"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Gen_PSEN1>
+<http://dayhoff.inf.um.es:8189/data/Gen_PSEN1>
   a <http://purl.obolibrary.org/obo/SO_0000704> ;
   rdfs:label "PSEN1"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/gene/5663> ;
   rdfs:comment "Presenilin 1. Componente del complejo gamma-secretasa que procesa APP. Mutaciones causan Alzheimer familiar de inicio temprano"@es ;
-  ns0:codifica <http://dayhoff.inf.um.es:3050/data/Proteina_PSEN1> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Cromosoma14> .
+  ns0:codifica <http://dayhoff.inf.um.es:8189/data/Proteina_PSEN1> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Cromosoma14> .
 
-<http://dayhoff.inf.um.es:3050/data/Proteina_PSEN1>
+<http://dayhoff.inf.um.es:8189/data/Proteina_PSEN1>
   a <http://purl.uniprot.org/uniprot/P49768> ;
   rdfs:label "Proteína PSEN1"@es ;
   rdfs:comment "Presenilina 1, subunidad catalítica del complejo gamma-secretasa"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/ActividadGammaSecretasa>, <http://dayhoff.inf.um.es:3050/data/ProcesoBetaAmiloide> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/ActividadGammaSecretasa>, <http://dayhoff.inf.um.es:8189/data/ProcesoBetaAmiloide> .
 
-<http://dayhoff.inf.um.es:3050/data/Cromosoma14>
+<http://dayhoff.inf.um.es:8189/data/Cromosoma14>
   a <http://purl.obolibrary.org/obo/SO_0000340> ;
   rdfs:label "Cromosoma 14"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Gen_PSEN2>
+<http://dayhoff.inf.um.es:8189/data/Gen_PSEN2>
   a <http://purl.obolibrary.org/obo/SO_0000704> ;
   rdfs:label "PSEN2"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/gene/5664> ;
   rdfs:comment "Presenilin 2. Homólogo de PSEN1, también componente de gamma-secretasa"@es ;
-  ns0:codifica <http://dayhoff.inf.um.es:3050/data/Proteina_PSEN2> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Cromosoma1> .
+  ns0:codifica <http://dayhoff.inf.um.es:8189/data/Proteina_PSEN2> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Cromosoma1> .
 
-<http://dayhoff.inf.um.es:3050/data/Proteina_PSEN2>
+<http://dayhoff.inf.um.es:8189/data/Proteina_PSEN2>
   a <http://purl.uniprot.org/uniprot/P49810> ;
   rdfs:label "Proteína PSEN2"@es ;
   rdfs:comment "Presenilina 2, homóloga funcional de PSEN1"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/ActividadGammaSecretasa> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/ActividadGammaSecretasa> .
 
-<http://dayhoff.inf.um.es:3050/data/Cromosoma1>
+<http://dayhoff.inf.um.es:8189/data/Cromosoma1>
   a <http://purl.obolibrary.org/obo/SO_0000340> ;
   rdfs:label "Cromosoma 1"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Gen_APOE>
+<http://dayhoff.inf.um.es:8189/data/Gen_APOE>
   a <http://purl.obolibrary.org/obo/SO_0000704> ;
   rdfs:label "APOE"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/gene/348> ;
   rdfs:comment "Apolipoprotein E. Principal factor de riesgo genético para Alzheimer esporádico de inicio tardío"@es ;
-  ns0:codifica <http://dayhoff.inf.um.es:3050/data/Proteina_APOE> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Cromosoma19> .
+  ns0:codifica <http://dayhoff.inf.um.es:8189/data/Proteina_APOE> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Cromosoma19> .
 
-<http://dayhoff.inf.um.es:3050/data/Proteina_APOE>
+<http://dayhoff.inf.um.es:8189/data/Proteina_APOE>
   a <http://purl.uniprot.org/uniprot/P02649> ;
   rdfs:label "Proteína APOE"@es ;
   rdfs:comment "Apolipoproteína E. Involucrada en transporte de lípidos y clearance de beta-amiloide"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/TransporteLipidos>, <http://dayhoff.inf.um.es:3050/data/ClearanceAmiloide> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/TransporteLipidos>, <http://dayhoff.inf.um.es:8189/data/ClearanceAmiloide> .
 
-<http://dayhoff.inf.um.es:3050/data/TransporteLipidos>
+<http://dayhoff.inf.um.es:8189/data/TransporteLipidos>
   a <http://purl.obolibrary.org/obo/GO_0006869> ;
   rdfs:label "Transporte de Lípidos"@es .
 
-<http://dayhoff.inf.um.es:3050/data/ClearanceAmiloide>
+<http://dayhoff.inf.um.es:8189/data/ClearanceAmiloide>
   a <http://purl.obolibrary.org/obo/GO_0034205> ;
   rdfs:label "Clearance de Beta-Amiloide"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Cromosoma19>
+<http://dayhoff.inf.um.es:8189/data/Cromosoma19>
   a <http://purl.obolibrary.org/obo/SO_0000340> ;
   rdfs:label "Cromosoma 19"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Gen_MAPT>
+<http://dayhoff.inf.um.es:8189/data/Gen_MAPT>
   a <http://purl.obolibrary.org/obo/SO_0000704> ;
   rdfs:label "MAPT"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/gene/4137> ;
   rdfs:comment "Microtubule Associated Protein Tau. Codifica la proteína tau, que se hiperfosforila formando ovillos neurofibrilares"@es ;
-  ns0:codifica <http://dayhoff.inf.um.es:3050/data/Proteina_MAPT> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Cromosoma17> .
+  ns0:codifica <http://dayhoff.inf.um.es:8189/data/Proteina_MAPT> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Cromosoma17> .
 
-<http://dayhoff.inf.um.es:3050/data/Proteina_MAPT>
+<http://dayhoff.inf.um.es:8189/data/Proteina_MAPT>
   a <http://purl.uniprot.org/uniprot/P10636> ;
   rdfs:label "Proteína Tau"@es ;
   rdfs:comment "Proteína tau asociada a microtúbulos. Su hiperfosforilación causa agregación en ovillos neurofibrilares"@es ;
-  ns0:participaEn <http://dayhoff.inf.um.es:3050/data/EstabilizacionMicrotubulos>, <http://dayhoff.inf.um.es:3050/data/FormacionOvillos> .
+  ns0:participaEn <http://dayhoff.inf.um.es:8189/data/EstabilizacionMicrotubulos>, <http://dayhoff.inf.um.es:8189/data/FormacionOvillos> .
 
-<http://dayhoff.inf.um.es:3050/data/EstabilizacionMicrotubulos>
+<http://dayhoff.inf.um.es:8189/data/EstabilizacionMicrotubulos>
   a <http://purl.obolibrary.org/obo/GO_0007025> ;
   rdfs:label "Estabilización de Microtúbulos"@es .
 
-<http://dayhoff.inf.um.es:3050/data/FormacionOvillos>
+<http://dayhoff.inf.um.es:8189/data/FormacionOvillos>
   a <http://purl.obolibrary.org/obo/GO_0097342> ;
   rdfs:label "Agregación de Proteína Tau"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Cromosoma17>
+<http://dayhoff.inf.um.es:8189/data/Cromosoma17>
   a <http://purl.obolibrary.org/obo/SO_0000340> ;
   rdfs:label "Cromosoma 17"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_APOE_e2>
+<http://dayhoff.inf.um.es:8189/data/Variante_APOE_e2>
   a <http://purl.obolibrary.org/obo/SO_0001059> ;
   rdfs:label "APOE ε2 (epsilon 2)"@es ;
   rdfs:comment "Alelo protector contra Alzheimer. Reduce riesgo aproximadamente 40%"@es ;
   rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/clinvar/variation/163092> ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_APOE> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon4_APOE> ;
-  ns0:protegeDe <http://dayhoff.inf.um.es:3050/data/AlzheimerDisease> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_APOE> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon4_APOE> ;
+  ns0:protegeDe <http://dayhoff.inf.um.es:8189/data/AlzheimerDisease> ;
   ns0:tieneFrecuenciaAlelica "0.08"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/Variante_APOE_e3>
+<http://dayhoff.inf.um.es:8189/data/Variante_APOE_e3>
   a <http://purl.obolibrary.org/obo/SO_0001059> ;
   rdfs:label "APOE ε3 (epsilon 3)"@es ;
   rdfs:comment "Alelo más común de APOE. Riesgo neutro para Alzheimer"@es ;
-  ns0:afectaGen <http://dayhoff.inf.um.es:3050/data/Gen_APOE> ;
-  ns0:localizadaEn <http://dayhoff.inf.um.es:3050/data/Exon4_APOE> ;
+  ns0:afectaGen <http://dayhoff.inf.um.es:8189/data/Gen_APOE> ;
+  ns0:localizadaEn <http://dayhoff.inf.um.es:8189/data/Exon4_APOE> ;
   ns0:tieneFrecuenciaAlelica "0.78"^^xsd:float .
 
-<http://dayhoff.inf.um.es:3050/data/ProcesoBetaAmiloide>
+<http://dayhoff.inf.um.es:8189/data/ProcesoBetaAmiloide>
   a <http://purl.obolibrary.org/obo/GO_1900221> ;
   rdfs:label "Formación de Placas Beta-Amiloide"@es .
 
-<http://dayhoff.inf.um.es:3050/data/ActividadGammaSecretasa>
+<http://dayhoff.inf.um.es:8189/data/ActividadGammaSecretasa>
   a <http://purl.obolibrary.org/obo/GO_0004190> ;
   rdfs:label "Actividad Gamma-Secretasa"@es .
 
-<http://dayhoff.inf.um.es:3050/data/InhibicionAcetilcolinesterasa>
+<http://dayhoff.inf.um.es:8189/data/InhibicionAcetilcolinesterasa>
   a <http://purl.obolibrary.org/obo/GO_0001975> ;
   rdfs:label "Inhibición de Acetilcolinesterasa"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Exon17_APP>
+<http://dayhoff.inf.um.es:8189/data/Exon17_APP>
   a <http://purl.obolibrary.org/obo/SO_0000147> ;
   rdfs:label "Exón 17 de APP"@es .
 
-<http://dayhoff.inf.um.es:3050/data/Exon4_APOE>
+<http://dayhoff.inf.um.es:8189/data/Exon4_APOE>
   a <http://purl.obolibrary.org/obo/SO_0000147> ;
   rdfs:label "Exón 4 de APOE"@es .
